@@ -1,0 +1,31 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class PlayerCommands : MonoBehaviour {
+
+    Vector3 originalPosition;
+
+    // Use this for initialization
+    void Start()
+    {
+        // Grab the original local position of the sphere when the app starts.
+        originalPosition = this.transform.localPosition;
+    }
+
+    // Update is called once per frame
+    void Update () {
+	
+	}
+
+    // Called by SpeechManager when the user says the "Reset world" command
+    void OnReset()
+    {
+        // Get the rigidbody of the player sphere and stop all movement
+        Rigidbody rb = GetComponent<Rigidbody>();
+        rb.angularVelocity = new Vector3(0, 0, 0);
+
+        // Put the player sphere back into its original local position.
+        this.transform.localPosition = originalPosition;
+    }
+
+}
