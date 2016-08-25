@@ -17,15 +17,22 @@ public class PlayerCommands : MonoBehaviour {
 	
 	}
 
-    // Called by SpeechManager when the user says the "Reset world" command
+    // Called by SpeechManager when the user says the "Reset game" command
     void OnReset()
     {
         // Get the rigidbody of the player sphere and stop all movement
         Rigidbody rb = GetComponent<Rigidbody>();
+        rb.velocity = new Vector3(0, 0, 0);
         rb.angularVelocity = new Vector3(0, 0, 0);
 
         // Put the player sphere back into its original local position.
         this.transform.localPosition = originalPosition;
+
+        // Reset the board by reactivating all the pickup objects
+        foreach (GameObject pickup in GameObject.FindGameObjectsWithTag("PickUp"))
+        {
+            pickup.SetActive(true);
+        }
     }
 
 }

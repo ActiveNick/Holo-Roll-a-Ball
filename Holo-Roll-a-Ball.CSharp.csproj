@@ -229,6 +229,7 @@
     <Compile Include="Assets\Scripts\HologramPlacement.cs" />
     <Compile Include="Assets\Scripts\PlayerCommands.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Rotator.cs" />
     <Compile Include="Assets\Scripts\SpeechManager.cs" />
   </ItemGroup>
   <ItemGroup>

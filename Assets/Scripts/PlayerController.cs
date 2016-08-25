@@ -28,4 +28,14 @@ public class PlayerController : MonoBehaviour {
 
         rb.AddForce(movement * speed);
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("PickUp"))
+        {
+            this.gameObject.GetComponent<AudioSource>().Play();
+            other.gameObject.SetActive(false);
+        }
+    }
+
 }

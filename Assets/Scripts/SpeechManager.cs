@@ -19,7 +19,7 @@ public class SpeechManager : MonoBehaviour
 
         keywords.Add("Move board", () =>
         {
-
+            // TO DO: Let the player move the board to another location
         });
 
         // Tell the KeywordRecognizer about our keywords.
