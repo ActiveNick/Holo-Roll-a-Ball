@@ -12,6 +12,8 @@ Holo-Roll-a-Ball is a HoloLens version of the starter tutorial for Unity with ad
 
 **NOTE**: I deliberately did NOT add walls to make the game more challenging.
 
+![Screenshot](Screenshots/GameBoard01.jpg)
+
 ## UI Notes
 The current UI implementation follows the basic Unity UI created in the Roll-a-Ball tutorial from Unity. It's basic for standard games, but [doesn't work by default in VR and Mixed Reality projects](https://unity3d.com/learn/tutorials/topics/virtual-reality/user-interfaces-vr). I set the UI Canvas Render Mode to **Main Camera (Camera)** which works in VR & HoloLens, but again isn't ideal. My next goal is to add a better Spatial UI in a future version.
 
