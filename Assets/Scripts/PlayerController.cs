@@ -13,9 +13,7 @@ public class PlayerController : MonoBehaviour {
 	// Initialization
 	void Start () {
         rb = GetComponent<Rigidbody>();
-        count = 0;
-        SetCountText();
-        winText.text = "";
+        ResetUI();
     }
 	
 	// Update is called once per frame
@@ -48,6 +46,12 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
+    // Called by SpeechManager when the user says the "Reset game" command
+    void OnReset()
+    {
+        ResetUI();
+    }
+
     private void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
@@ -55,5 +59,12 @@ public class PlayerController : MonoBehaviour {
         {
             winText.text = "You win!";
         }
+    }
+
+    private void ResetUI()
+    {
+        count = 0;
+        SetCountText();
+        winText.text = "";
     }
 }

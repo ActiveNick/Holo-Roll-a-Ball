@@ -4,12 +4,14 @@ using System.Collections;
 public class PlayerCommands : MonoBehaviour {
 
     Vector3 originalPosition;
+    GameObject[] allPickups;
 
     // Use this for initialization
     void Start()
     {
         // Grab the original local position of the sphere when the app starts.
         originalPosition = this.transform.localPosition;
+        allPickups = GameObject.FindGameObjectsWithTag("PickUp");
     }
 
     // Update is called once per frame
@@ -29,7 +31,7 @@ public class PlayerCommands : MonoBehaviour {
         this.transform.localPosition = originalPosition;
 
         // Reset the board by reactivating all the pickup objects
-        foreach (GameObject pickup in GameObject.FindGameObjectsWithTag("PickUp"))
+        foreach (GameObject pickup in allPickups)
         {
             pickup.SetActive(true);
         }
