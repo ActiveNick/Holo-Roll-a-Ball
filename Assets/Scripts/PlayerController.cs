@@ -1,15 +1,22 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 
     public float speed;
     private Rigidbody rb;
+    private int count;
+    public Text countText;
+    public Text winText;
 
 	// Initialization
 	void Start () {
         rb = GetComponent<Rigidbody>();
-	}
+        count = 0;
+        SetCountText();
+        winText.text = "";
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -33,9 +40,20 @@ public class PlayerController : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("PickUp"))
         {
+            // Play a sound when we pick-up an object
             this.gameObject.GetComponent<AudioSource>().Play();
             other.gameObject.SetActive(false);
+            count++;
+            SetCountText();
         }
     }
 
+    private void SetCountText()
+    {
+        countText.text = "Count: " + count.ToString();
+        if (count >= 12)
+        {
+            winText.text = "You win!";
+        }
+    }
 }
