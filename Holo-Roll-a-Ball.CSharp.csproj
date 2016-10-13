@@ -82,8 +82,12 @@
     <Reference Include="Mono.Cecil">
       <HintPath>Library\UnityAssemblies\Mono.Cecil.dll</HintPath>
     </Reference>
+    <Reference Include="HoloLensXboxController">
+      <HintPath>Assets\HoloLensXboxControllerInput\Plugins\HoloLensXboxController.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\HoloLensXboxControllerInput\ControllerInputExample.cs" />
     <Compile Include="Assets\HoloToolkit\CrossPlatform\Scripts\MetroHandleRef.cs" />
     <Compile Include="Assets\HoloToolkit\CrossPlatform\Scripts\Reflection\ReflectionExtensions.cs" />
     <Compile Include="Assets\HoloToolkit\CrossPlatform\Scripts\Reflection\TypeUtils.cs" />
@@ -245,6 +249,7 @@
     <Compile Include="Assets\Scripts\SpeechManager.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\HoloLensXboxControllerInput\README.txt" />
     <None Include="Assets\HoloToolkit\Input\Shaders\CursorShader.shader" />
     <None Include="Assets\HoloToolkit\SpatialMapping\Shaders\Occlusion.shader" />
     <None Include="Assets\HoloToolkit\SpatialMapping\Shaders\Wireframe.shader" />

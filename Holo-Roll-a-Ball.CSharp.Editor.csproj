@@ -130,6 +130,9 @@
     <Reference Include="Mono.Cecil">
       <HintPath>Library\UnityAssemblies\Mono.Cecil.dll</HintPath>
     </Reference>
+    <Reference Include="HoloLensXboxController">
+      <HintPath>Assets\HoloLensXboxControllerInput\Plugins\HoloLensXboxController.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Holo-Roll-a-Ball.CSharp.csproj">
@@ -156,6 +159,7 @@
     <Compile Include="Assets\HoloToolkit\Utilities\Editor\LayerMaskExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\HoloLensXboxControllerInput\README.txt" />
     <None Include="Assets\HoloToolkit\Input\Shaders\CursorShader.shader" />
     <None Include="Assets\HoloToolkit\SpatialMapping\Shaders\Occlusion.shader" />
     <None Include="Assets\HoloToolkit\SpatialMapping\Shaders\Wireframe.shader" />
