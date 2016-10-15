@@ -5,9 +5,10 @@ Holo-Roll-a-Ball is a HoloLens version of the starter tutorial for Unity with ad
 * Playing board floats in front of the user when the game starts
 * Move the board with your gaze and tap to lock in place
 * Move the player ball with an Xbox One S Bluetooth controller, or the WASD / arrow keys on a Bluetooth keyboard
-* Pick-up yellow cubes around the game board to score points, without falling off into the ether!
+* Pick-up yellow cubes around the game board to score points, without falling off the board. If the ball falls off, it'll drop to the physical floor where the board is placed
 * Show a basic UI for scoring & end of game
-* Say the speech command "Reset Game" out loud to reset the player ball to the center of the board
+* Say the voice command "Reset Game" out loud to reset the player ball to the center of the board
+* Show or hide the spatial mesh of your environment with the "display mesh" and "hide mesh" voice commands
 * Ambient spatial sound during the game
 
 **NOTE**: I deliberately did NOT add walls to make the game more challenging.
