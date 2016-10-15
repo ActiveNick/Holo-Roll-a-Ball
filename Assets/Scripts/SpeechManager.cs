@@ -17,6 +17,18 @@ public class SpeechManager : MonoBehaviour
             this.BroadcastMessage("OnReset");
         });
 
+        keywords.Add("Display Mesh", () =>
+        {
+            // Call the OnReset method on every descendant object.
+            this.BroadcastMessage("OnDisplayMesh");
+        });
+
+        keywords.Add("Hide Mesh", () =>
+        {
+            // Call the OnReset method on every descendant object.
+            this.BroadcastMessage("OnHideMesh");
+        });
+
         keywords.Add("Move board", () =>
         {
             // TO DO: Let the player move the board to another location

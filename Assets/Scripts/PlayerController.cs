@@ -9,10 +9,11 @@ using HoloLensXboxController;
 public class PlayerController : MonoBehaviour {
 
     public float speed;
-    private Rigidbody rb;
-    private int count;
     public Text countText;
     public Text winText;
+
+    private Rigidbody rb;
+    private int count;
 
     // Temporarily used by the HoloLensXboxController plugin
     private ControllerInput controllerInput;

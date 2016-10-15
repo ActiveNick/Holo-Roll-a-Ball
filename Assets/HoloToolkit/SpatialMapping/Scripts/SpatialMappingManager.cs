@@ -274,5 +274,15 @@ namespace HoloToolkit.Unity
                 }
             }
         }
+
+        void OnDisplayMesh()
+        {
+            drawVisualMeshes = true;
+        }
+
+        void OnHideMesh()
+        {
+            drawVisualMeshes = false;
+        }
     }
 }
