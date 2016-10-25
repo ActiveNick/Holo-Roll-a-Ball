@@ -1,5 +1,5 @@
 # Holo-Roll-a-Ball
-Holo-Roll-a-Ball is a HoloLens version of the starter tutorial for Unity with adapted features. This is a work in progress.
+Holo-Roll-a-Ball is a HoloLens version of the starter tutorial for Unity with adapted features. This is a work in progress. The latest version was built in Unity 5.5.0b6 (Preview).
 
 ## Adapted Features
 * Playing board floats in front of the user when the game starts
